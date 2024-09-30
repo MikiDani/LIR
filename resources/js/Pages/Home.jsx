@@ -1,10 +1,21 @@
 import Layout from "../Layout/Layout";
 
-function Home({name}) {
+function Home({name, news}) {
+  console.log(news)
   return (
     <>
       <h1 className="title">Home</h1>
-      <p className="p-1 bg-light">Helló {name}</p>
+
+      <div>
+        {news.map(row => (
+          <div key={row.id} className="p-3 bg-light rouned">
+              <title>{row.title}</title>
+              <p>{row.text}</p>
+              <a href={row.link} target="_blank">{row.link}</a>
+          </div>
+        ))}
+      </div>
+      
     </>
   );
 }

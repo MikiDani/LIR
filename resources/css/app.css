@@ -2,8 +2,12 @@ html {
   background-color: white;
 }
 
+#app-container {
+  width: 100wv;
+  height: 100hv;
+}
+
 .title {
   background-color: deepskyblue;
-  padding: 10px;
   border-radius: 15px;
 }/*# sourceMappingURL=app.css.map */
