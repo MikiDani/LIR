@@ -1,16 +1,14 @@
 <?php
 
-use App\Http\Controllers\NewsController;
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
 
-// Route::get('/', function () {
-//     return Inertia::render('Home', ['name' => 'Miklós']);
-// });
+Route::get('/',             [PageController::class, 'news']);
+Route::get('/about',        [PageController::class, 'about']);
 
-Route::get('/about', function() {
-    return inertia('About');
-});
 
-Route::get('/', [NewsController::class, 'index']);
-Route::resource('posts', NewsController::class)->except('index');
+
+
+
+//Route::get('/about', function() { return inertia('About');});
+// Route::resource('posts', PageController::class)->except('index');

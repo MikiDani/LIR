@@ -1,9 +1,7 @@
 import './bootstrap';
-// BOOSTRAP CSS IMPORT START
-import '../css/bootstrap_modify.css';
+
+import '../css/site.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-// OWN CSS
-import '../css/app.css';
 
 import { createInertiaApp } from '@inertiajs/react'
 import { createRoot } from 'react-dom/client'

@@ -1,0 +1,21 @@
+$primary: #0074d9;
+$secondary: #838383;
+$danger: #ff4136;
+$light: #c0c0c0;
+$dark: #1b1b1b;
+
+$green-dark: #006054;
+$green-light: #008f7c;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "danger": $danger,
+  "light": $light,
+  "green-dark": $green-dark,
+  "green-light": $green-light,
+  "dark": $dark,
+);
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'app';
