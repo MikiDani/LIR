@@ -16,7 +16,7 @@ export default function Layout({children}) {
                   </div>
                   <nav className="main-menu">
                     <ul>
-                      <li><Link preserveScroll href="/">News</Link></li>
+                      <li><Link preserveScroll href="/" only={['users']}>News</Link></li>
                       <li><Link preserveScroll href="/about">About</Link></li>
                       <li><a href="#">Media</a>
                         <ul className="sub-menu">

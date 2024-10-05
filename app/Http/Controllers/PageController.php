@@ -8,9 +8,14 @@ class PageController extends Controller
 {
     public function news()
     {
-        $news = News::all();
+        //$news = News::all();
+        $news = News::latest()->paginate(3);
 
-        return inertia('Home', ['news' => $news]);
+        $teszt = 'kiskacsa';
+
+        // dd($news);
+
+        return inertia('News', ['news' => $news, 'teszt' => $teszt]);
     }
 
     public function about()
