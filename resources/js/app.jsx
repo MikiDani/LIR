@@ -1,7 +1,14 @@
-import './bootstrap';
+// Importáljuk a szükséges Bootstrap CSS fájlt először
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import '../css/site.css';
+// A többi CSS fájl betöltése (pl. az app.css)
+import '../css/app.css';
+
+// Bootstrap JS fájl betöltése (ami tartalmazza a Bootstrap JS funkciókat, pl. modals, tooltips, stb.)
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+// Egyéb szükséges modulok importálása
+import './bootstrap';
 
 import { createInertiaApp } from '@inertiajs/react'
 import { createRoot } from 'react-dom/client'

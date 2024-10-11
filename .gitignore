@@ -3,6 +3,7 @@
 /public/build
 /public/hot
 /public/storage
+/public/modules
 /storage/*.key
 /vendor
 .env
@@ -20,3 +21,4 @@ yarn-error.log
 /.vscode
 /.zed
 /DESIGN
+
