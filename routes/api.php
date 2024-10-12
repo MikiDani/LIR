@@ -3,11 +3,6 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthenticationController;
-use App\Http\Controllers\FrontendController;
-
-// FrontendPage
-
-Route::get('/loaddata', [FrontendController::class, 'loadData']);
 
 // Admin
 

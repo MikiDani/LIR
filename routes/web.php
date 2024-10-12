@@ -23,6 +23,7 @@ Route::middleware(['web', 'auth', \App\Http\Middleware\LanguageMiddleware::class
 
 Route::middleware([RedirectIfAuthenticated::class])->group(function () {
 	Route::get ('/admin/login', [AuthenticationController::class, 'admin_login'])->name('admin_login');
+	Route::get ('/admin/login', [AuthenticationController::class, 'admin_login'])->name('login');
 	Route::post('/admin/login', [AuthenticationController::class, 'admin_login_post'])->name('admin_login_post');
 	Route::get ('/admin/registration', [AuthenticationController::class, 'admin_registration'])->name('admin_registration');
 	Route::post('/admin/registration', [AuthenticationController::class, 'admin_registration_post'])->name('admin_registration_post');
