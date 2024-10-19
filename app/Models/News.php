@@ -8,9 +8,10 @@ class News extends Model
 {
     protected $fillable = [
         'sequence',
-        'pictname',
         'title',
         'text',
         'link',
+        'pictname',
+        'date',
     ];
 }

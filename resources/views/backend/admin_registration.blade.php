@@ -2,8 +2,6 @@
 
 @section('page_js')
 	<script type="module" src="/js/backend.js"></script>
-	<script type="module" src="/js/registration_validate.js"></script>
-	<script type="module" src="/js/validate_messages.js"></script>
 @endsection
 
 @section('content')
@@ -37,19 +35,19 @@
 					@csrf
 					<p>
 						<label class="mt-3">{{ __('messages.registration.textusername') }}</label>
-						<input type="text" name="name" value="{{ old('name') }}" class="form-control mt-2">
+						<input type="text" name="name" value="{{ old('name') }}" autocomplete="name" class="form-control mt-2">
 					</p>
 					<p>
 						<label class="mt-3">{{ __('messages.registration.textemail') }}</label>
-						<input type="text" name="email" value="{{ old('email') }}" class="form-control mt-2">
+						<input type="text" name="email" value="{{ old('email') }}" autocomplete="email" class="form-control mt-2">
 					</p>
 					<p>
 						<label class="mt-3">{{ __('messages.registration.textpassword') }}</label>
-						<input type="password" id="password" name="password" class="form-control mt-2">
+						<input type="password" id="password" name="password" autocomplete="password" class="form-control mt-2">
 					</p>
 					<p>
 						<label class="mt-3">{{ __('messages.registration.textpasswordagin') }}</label>
-						<input type="password" name="re_password" class="form-control mt-2">
+						<input type="password" name="re_password" autocomplete="new-password" class="form-control mt-2">
 					</p>
 					<div class="row p-0 m-0">
 						<div class="robot-button link-1 login-distance text-center">
@@ -69,7 +67,7 @@
 						</div>
 					</div>
 					<div class="row p-0 m-0 login-distance text-center">
-						<a href="{{route('admin_login')}}">{{ __('messages.registration.textigo') }}</a>
+						<a href="{{route('login')}}">{{ __('messages.registration.textigo') }}</a>
 					</div>
 					<div class="row p-0 m-0">
 						<button type="submit" class="btn btn-lg bg-primary text-uppercase text-white">{{ __('messages.registration.textregistration') }}</button>

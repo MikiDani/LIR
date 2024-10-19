@@ -34,11 +34,11 @@
 					@csrf
 					<p>
 						<label class="mt-3">{{ __('messages.login.textusernameoremail') }}</label>
-						<input type="text" name="usernameoremail" value="{{ old('usernameoremail') }}" class="form-control mt-2">
+						<input type="text" name="usernameoremail" autocomplete="username" value="{{ old('usernameoremail') }}" class="form-control mt-2">
 					</p>
 					<p>
 						<label class="mt-3">{{ __('messages.login.textpassword') }}</label>
-						<input type="password" name="password" class="form-control mt-2">
+						<input type="password" name="password" autocomplete="current-password" class="form-control mt-2">
 					</p>
 					<div class="row p-0 m-0 login-distance">
 						<div class="p-0 m-0 col-12 col-xl-6 text-center">

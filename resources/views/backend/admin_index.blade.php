@@ -14,9 +14,8 @@
 			<h6>{{ session('message') }}</h6>
 		</div>
 	@endif
-	
+
 	<p class="p-3 m-0 text-center">{{ __('messages.adminindex.text01') }}</p>
-	<p class="p-3 m-0 text-center">{{ __('messages.adminindex.text01') }}</p>
-	
+
 </div>
 @endsection
