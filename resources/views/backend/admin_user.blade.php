@@ -8,7 +8,7 @@
 	
 	@include('backend.admin_menu')
 	
-	<div class="row p-0 m-0">
+	<div class="row p-0 m-0 w-100">
 		<div class="d-flex justify-content-center align-items-top">
 			<div class="login-box col-12 col-sm-8 col-md-6 col-xl-4 p-3 my-3 bg-light rounded">
 				<div class="login-box-head">

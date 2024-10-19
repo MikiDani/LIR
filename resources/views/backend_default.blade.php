@@ -16,7 +16,9 @@
 	<link rel="stylesheet" href="/scss/backend_style.css">
 </head>
 <body class="bg-dark">
-	@yield('content')
+	<div class="container-fluid d-flex flex-column justify-content-start align-items-center min-vh-100 p-0 m-0">
+		@yield('content')
+	</div>
 	<script src="/modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="/modules/jquery/dist/jquery.min.js"></script>
 	<script src="/modules/jquery-validation/dist/jquery.validate.js"></script>

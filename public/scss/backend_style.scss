@@ -5,6 +5,7 @@ $warning: gold;
 $danger: #ff4136;
 $selected: #0ee8ec;
 $test: #e436ff;
+$gray: #dedede;
 
 // milk coofe:
 // #f0dcae
@@ -18,13 +19,13 @@ $theme-colors: (
 	"secondary": $secondary,
 	"warning": $warning,
 	"danger": $danger,
+	"gray": $gray,
 	);
 
 $color-01: #191919;
 $color-gold-01: gold;
 $color-underline-primary: $primary;
 $color-underline-gold: gold;
-
 
 @import "../modules/bootstrap/scss/bootstrap";
 

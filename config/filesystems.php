@@ -57,6 +57,14 @@ return [
             'throw' => false,
         ],
 
+        'newspic' => [
+            'driver' => 'local',
+            'root' => storage_path('newspic'),
+            'url' => env('APP_URL').'/newspic',
+            'visibility' => 'public',
+            'throw' => false,
+        ],
+
     ],
 
     /*
@@ -72,6 +80,7 @@ return [
 
     'links' => [
         public_path('storage') => storage_path('app/public'),
+        public_path('newspic') => storage_path('newspic'),
     ],
 
 ];

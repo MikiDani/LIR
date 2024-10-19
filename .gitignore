@@ -22,3 +22,5 @@ yarn-error.log
 /.zed
 /DESIGN
 
+/public/newspic
+/storage/newspic
