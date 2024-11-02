@@ -11965,610 +11965,181 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-html {
-  background-color: white;
-  font-size: 14px;
-  font-weight: 400;
-  height: 100%;
+@font-face {
+  font-family: "Bungee";
+  src: url("/public/fonts/bungee.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-
-#app-container {
-  width: 100wv;
-  height: 100hv;
+html {
+  background-color: black;
+  border: 0;
+  padding: 0;
 }
 
 body {
+  width: 100vw;
+  min-height: 100vh;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   letter-spacing: 0.1px;
   line-height: 1.8;
-  color: #051922;
-  overflow-x: hidden;
+  color: #006054;
+  background-color: black;
+  background-image: url("/public/img/frontend/bg.gif");
+  background-repeat: repeat;
+  font-family: "Bungee", sans-serif;
 }
 
 a {
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-  color: #006054;
-}
-a:hover {
-  color: #008f7c;
-}
-
-a:hover {
   color: #008f7c;
   text-decoration: none;
 }
-
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  margin: 0 0 1.25rem 0;
-  color: #051922;
+a:hover {
+  color: white;
 }
 
-h1:last-child, .h1:last-child,
-h2:last-child, .h2:last-child,
-h3:last-child, .h3:last-child,
-h4:last-child, .h4:last-child,
-h5:last-child, .h5:last-child,
-h6:last-child, .h6:last-child {
-  margin: 0;
-}
-
-h1, .h1 {
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 4rem;
-}
-
-@media only screen and (max-width: 767.96px) {
-  h1, .h1 {
-    font-size: 3rem;
-    line-height: 3.25rem;
-  }
-}
-@media only screen and (max-width: 575.96px) {
-  h1, .h1 {
-    font-size: 2.5rem;
-    line-height: 2.75rem;
-  }
-}
-h2, .h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 3.25rem;
-}
-
-@media only screen and (max-width: 767.96px) {
-  h2, .h2 {
-    font-size: 2.5rem;
-    line-height: 2.75rem;
-  }
-}
-@media only screen and (max-width: 575.96px) {
-  h2, .h2 {
-    font-size: 2rem;
-    line-height: 2.25rem;
-  }
-}
-h3, .h3 {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 2.25rem;
-}
-
-@media only screen and (max-width: 575.96px) {
-  h3, .h3 {
-    font-size: 1.75rem;
-    line-height: 2rem;
-  }
-}
-h4, .h4 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.75rem;
-}
-
-@media only screen and (max-width: 575.96px) {
-  h4, .h4 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
-h5, .h5 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 1.5rem;
-}
-
-h6, .h6 {
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.5rem;
-}
-
-p {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  letter-spacing: 0.1px;
-  line-height: 1.8;
-  color: #051922;
-  margin: 0 0 1.25rem 0;
-}
-
-p:last-child {
-  margin: 0;
-}
-
-/* 
----------------
-# Header Styles
----------------
-*/
-.menu-logo {
-  width: 160px;
-}
-
-ul.navbar-nav li.nav-item a.nav-link, ul.navbar-nav li.nav-item.active a.nav-link {
-  color: #051922;
-}
-
-.top-header-area {
-  z-index: 999;
-  width: 100%;
-  padding: 0 0;
-}
-
-.top-header-area.white ul.navbar-nav li.nav-item a.nav-link, .top-header-area.white ul.navbar-nav li.nav-item.active a.nav-link {
-  color: #fff;
-}
-
-ul.navbar-nav li.nav-item a.nav-link, ul.navbar-nav li.nav-item.active a.nav-link {
-  color: #fff;
-  font-weight: 700;
-  margin-right: 14px;
-}
-
-a.navbar-brand img {
-  max-width: 150px;
-}
-
-nav.main-menu ul {
+#app-container {
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
-nav.main-menu ul li {
-  display: inline-block;
-}
-
-nav.main-menu ul li a {
-  color: #fff;
-  font-weight: 700;
+#center-container {
   display: block;
-  padding: 15px;
+  padding-top: 15vh !important;
 }
 
-nav.main-menu ul > li {
-  position: relative;
+#menu-container {
+  background-image: linear-gradient(to right, #006054, #008f7c);
+  padding: 10px !important;
+  width: 100%;
+  max-width: 800px;
 }
 
-nav.main-menu ul ul.sub-menu {
-  position: absolute;
-  background-color: #fff;
-  width: 220px;
-  padding: 15px 15px;
-  margin: 0;
-  left: 0;
-  top: 50px;
-  border-radius: 3px;
-  transition: 0.3s;
-  opacity: 0;
-  visibility: hidden;
-  box-shadow: 0 0 20px #555555;
-}
-
-nav.main-menu ul ul.sub-menu li {
-  display: block;
-  text-align: left;
-}
-
-nav.main-menu ul ul.sub-menu li a {
-  color: #555;
-  font-weight: 600;
-  padding: 7px 10px;
-  font-size: 13px;
-}
-
-nav.main-menu ul > li:hover ul {
-  opacity: 1;
-  visibility: visible;
-}
-
-nav.main-menu ul li:last-child a {
-  display: inline-block;
-}
-
-nav.main-menu > ul li:last-child {
-  float: right;
-}
-
-.site-logo {
-  float: left;
-  max-width: 150px;
-}
-
-ul.sub-menu li:last-child {
-  float: none !important;
-}
-
-.mean-container .mean-bar {
-  background-color: transparent;
-  position: absolute;
-  right: 0;
-  top: 15px;
-}
-
-.mean-bar a.meanmenu-reveal {
+#menu-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 200px;
+  box-sizing: border-box;
   background-color: #006054;
+  background-image: url("/public/img/frontend/start-bg.jpg");
+  background-size: cover;
 }
 
-.main-menu-wrap {
-  position: relative;
-}
-
-.mean-container a.meanmenu-reveal {
-  color: #051922;
-}
-
-.mean-container a.meanmenu-reveal span {
-  background-color: #051922;
-}
-
-.mean-container .mean-nav ul li a {
-  padding: 0.5em 5%;
-}
-
-.mean-container .mean-nav ul li li a {
-  padding: 0.5em 10%;
-}
-
-.mean-container .mean-nav ul li a.mean-expand {
-  font-size: 16px;
-  height: 10px;
-  line-height: 10px;
-  width: 15px;
-}
-
-.mean-container a.meanmenu-reveal {
-  padding: 8px 8px 6px;
-}
-
-nav.mean-nav > ul > li:first-child > a {
-  border-top: none;
-}
-
-.header-icons a {
-  color: #fff;
-  display: inline-block;
-  padding: 10px;
-}
-
-.site-logo {
-  padding: 6px 0;
-}
-
-.top-header-area.sepherate-header ul li > a, .top-header-area.sepherate-header .header-icons a {
-  color: #051922;
-}
-
-nav.main-menu ul ul.sub-menu li {
-  display: block;
-}
-
-nav.main-menu ul ul.sub-menu li a {
-  color: #555;
-  padding: 8px;
-  font-size: 13px;
-  font-weight: 600;
-}
-
-nav.main-menu ul li.current-list-item > a {
-  color: #006054;
-}
-
-nav.main-menu li:hover > a {
-  color: #006054;
-}
-
-nav.main-menu li a {
-  transition: 0.3s;
-}
-
-.top-header-area .header-icons a {
-  transition: 0.3s;
-}
-
-.top-header-area .header-icons a:hover {
-  color: #006054;
-}
-
-.sticky-wrapper {
-  position: absolute;
-  left: 0;
-  top: 0;
+#menu-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  z-index: 999 !important;
-}
-
-.sticky-wrapper.is-sticky .top-header-area {
-  background-color: #051922;
-  padding: 15px 0;
-}
-
-.top-header-area {
-  transition: 0.3s;
-}
-
-ul.navbar-nav {
-  margin: 0 auto;
-}
-
-.search-area {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 5555;
-  background-color: #051922;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
-span.close-btn {
-  position: absolute;
-  right: 0%;
-  color: #fff;
-  top: 5%;
-  cursor: pointer;
-}
-
-.search-area {
-  height: 100%;
-}
-
-.search-area div {
-  height: 100%;
-}
-
-.search-bar {
-  height: 100%;
-  display: table;
-  width: 100%;
-}
-
-a.mobile-show {
-  display: none;
-}
-
-.search-area .search-bar div.search-bar-tablecell {
-  display: table-cell;
-  vertical-align: middle;
   height: auto;
 }
 
-.search-bar-tablecell input {
-  border: none;
-  padding: 15px;
-  width: 60%;
-  background-color: transparent;
-  border-bottom: 1px solid #006054;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 50px;
-  font-weight: 700;
-  margin-bottom: 40px;
-  color: #fff;
+#menu-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 60px;
+  background-image: url("/public/img/frontend/menu-bg.png");
 }
 
-.search-bar-tablecell button[type=submit] {
-  border: none;
-  background-color: #006054;
-  padding: 15px 30px;
-  cursor: pointer;
-  display: inline-block;
-  border-radius: 50px;
-  font-weight: 700;
-}
-
-.search-bar-tablecell input::-moz-placeholder {
-  color: #fff;
-}
-
-.search-bar-tablecell input::placeholder {
-  color: #fff;
-}
-
-.search-bar-tablecell button[type=submit] i {
-  margin-left: 5px;
-}
-
-.search-area {
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.search-area.search-active {
-  visibility: visible;
-  opacity: 1;
-  z-index: 999;
-}
-
-.search-bar-tablecell h3, .search-bar-tablecell .h3 {
-  color: #fff;
-  margin-bottom: 30px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 7px;
-}
-
-/*
----------------
-# Footer Styles
----------------
-*/
-.single-logo-item img {
-  max-width: 180px;
-  margin: 0 auto;
-}
-
-.logo-carousel-section {
-  background-color: #f5f5f5;
-  padding: 50px 0;
-}
-
-.footer-area {
-  background-color: #051922;
-  color: #fff;
-}
-
-h2.widget-title, .widget-title.h2 {
-  font-size: 24px;
-  font-weight: 500;
+.menu-button {
   position: relative;
-  padding-bottom: 20px;
-  color: #fff;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
+  transform: rotate(-2deg);
+  transition: transform 0.5s ease;
+}
+.menu-button:hover {
+  transform: rotate(0deg);
+  transform: scale(1.3);
 }
 
-h2.widget-title:after, .widget-title.h2:after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 20px;
-  height: 2px;
-  background-color: #006054;
-  content: "";
-}
-
-.footer-box p {
-  color: #fff;
-  opacity: 0.7;
-  line-height: 1.8;
-}
-
-.footer-box ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.footer-box ul li {
-  opacity: 0.7;
-  margin-bottom: 10px;
-  line-height: 1.8;
-}
-
-.footer-box ul li:last-child {
-  margin-bottom: 0;
-}
-
-.footer-box.subscribe form input[type=email] {
-  border: none;
-  background-color: #012738;
-  width: 78%;
-  padding: 15px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  color: #fff;
-}
-
-.footer-box.subscribe form button {
-  width: 20%;
-  border: none;
-  background-color: #012738;
-  color: #006054;
-  padding: 14px 0;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  cursor: pointer;
-}
-
-.footer-box.subscribe form button:focus {
-  outline: none;
-}
-
-.copyright {
-  background-color: #051922;
-  border-top: 1px solid #232a35;
-}
-
-.copyright p {
-  margin: 0;
-  color: #fff;
-  opacity: 0.7;
-  padding: 16px 0;
-  font-size: 15px;
-}
-
-.copyright a {
-  color: #006054;
-  font-weight: 700;
-}
-
-.copyright a:hover {
-  color: #006054;
-}
-
-.social-icons ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.social-icons ul li {
-  display: inline-block;
-}
-
-.social-icons ul li a {
-  font-size: 16px;
-  color: #fff;
-  opacity: 0.7;
-  padding: 16px 10px;
-  display: block;
-}
-
-.footer-box ul li a {
-  color: #fff;
-}
-
-.footer-box.pages ul li {
+.menu-button-effect-0 {
   position: relative;
-  padding-left: 20px;
+  z-index: 3 !important;
 }
 
-.footer-box.pages ul li:before {
+.menu-button-effect-1 {
   position: absolute;
-  left: 0;
-  top: 0;
-  content: "\f105";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: #006054;
+  left: 1px;
+  top: 1px;
+  color: #00dcbd !important;
+  z-index: 1;
+}
+
+.menu-button-effect-2 {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  color: #fff600 !important;
+  z-index: 2;
+}
+
+.letter-0 {
+  letter-spacing: 0rem;
+}
+
+.letter-1 {
+  letter-spacing: 0.2rem;
 }
 
 .paginate-container svg {
   width: 20px;
   height: 20px;
+}
+
+footer {
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-icon {
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+.footer-icon:hover {
+  transform: scale(1.2);
+  filter: invert(0.4);
+  -webkit-filter: invert(0.4);
+}
+
+.icon-email {
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23006054' width='800px' height='800px' viewBox='0 0 1920 1920' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 1835.1254,458.42432 V 1542.0244 l -422.8221,-528.4784 -80.3477,64.2987 426.9387,533.7236 H 162.35093 L 589.28958,1077.8447 508.94282,1013.546 86.119778,1542.0235 V 458.42341 L 960.57165,1216.7276 Z m -0.062,-184.25228 V 322.1121 L 960.61255,1080.4153 86.160778,322.11301 v -47.94097 z' fill-rule='evenodd' style='stroke-width:0.91094'/%3E%3C/svg%3E");
+}
+
+.icon-github {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='4 0 12 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23006054' fill-rule='evenodd'%3E%3Cpath d='M10,1 C12.76,1 15,3.24 15,6.25 C15,8.55 13.54,10.31 11.27,10.94 C10.88,11.04 10.73,10.73 10.73,10.5 C10.73,10.21 10.74,9.35 10.74,8.42 C10.74,8.05 10.61,7.77 10.48,7.63 C11.64,7.47 12.85,6.92 12.85,5.14 C12.85,4.66 12.67,4.3 12.4,4.03 C12.44,3.88 12.6,3.29 12.27,2.41 C12.27,2.41 11.87,2.27 11,2.88 C10.65,2.77 10.27,2.71 9.9,2.71 C9.53,2.71 9.15,2.77 8.8,2.88 C7.93,2.27 7.53,2.41 7.53,2.41 C7.2,3.29 7.36,3.88 7.4,4.03 C7.13,4.3 6.95,4.66 6.95,5.14 C6.95,6.92 8.16,7.47 9.32,7.63 C9.18,7.77 9.06,8.05 9.06,8.42 C9.06,9.35 9.07,10.21 9.07,10.5 C9.07,10.73 8.91,11.04 8.53,10.94 C6.26,10.31 4.8,8.55 4.8,6.25 C4.8,3.24 7.04,1 10,1 Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.icon-spotify {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1'%3E%3Cg id='Dribbble-Light-Preview' transform='translate(-140.000000, -7479.000000)' fill='%23006054' %3E%3Cg id='icons' transform='translate(56.000000, 160.000000)'%3E%3Cpath d='M99.915,7327.865 C96.692,7325.951 91.375,7325.775 88.297,7326.709 C87.803,7326.858 87.281,7326.58 87.131,7326.085 C86.981,7325.591 87.26,7325.069 87.754,7324.919 C91.287,7323.846 97.159,7324.053 100.87,7326.256 C101.314,7326.52 101.46,7327.094 101.196,7327.538 C100.934,7327.982 100.358,7328.129 99.915,7327.865 L99.915,7327.865 Z M99.81,7330.7 C99.584,7331.067 99.104,7331.182 98.737,7330.957 C96.05,7329.305 91.952,7328.827 88.773,7329.792 C88.36,7329.916 87.925,7329.684 87.8,7329.272 C87.676,7328.86 87.908,7328.425 88.32,7328.3 C91.951,7327.198 96.466,7327.732 99.553,7329.629 C99.92,7329.854 100.035,7330.334 99.81,7330.7 L99.81,7330.7 Z M98.586,7333.423 C98.406,7333.717 98.023,7333.81 97.729,7333.63 C95.381,7332.195 92.425,7331.871 88.944,7332.666 C88.609,7332.743 88.274,7332.533 88.198,7332.197 C88.121,7331.862 88.33,7331.528 88.667,7331.451 C92.476,7330.58 95.743,7330.955 98.379,7332.566 C98.673,7332.746 98.766,7333.129 98.586,7333.423 L98.586,7333.423 Z M94,7319 C88.477,7319 84,7323.477 84,7329 C84,7334.523 88.477,7339 94,7339 C99.523,7339 104,7334.523 104,7329 C104,7323.478 99.523,7319.001 94,7319.001 L94,7319 Z'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.icon-facebook {
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23006054' viewBox='0 0 22 22' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z'/%3E%3C/svg%3E");
+}
+
+.icon-soundcloud {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='15.583 -197.416 989.654 989.654' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg'><defs id='defs13' /><path fill='%23006054' d='m 26.791,272.388 c -2.065,0 -3.704,1.597 -3.971,3.874 l -7.237,54.972 7.237,54.025 c 0.267,2.277 1.905,3.863 3.971,3.863 2,0 3.629,-1.575 3.948,-3.843 v -0.011 0.011 l 8.578,-54.046 -8.578,-54.982 c -0.309,-2.267 -1.958,-3.863 -3.948,-3.863 z M 67.49,242.353 c -0.341,-2.362 -2.033,-3.991 -4.119,-3.991 -2.097,0 -3.832,1.682 -4.119,3.991 0,0.021 -9.728,88.881 -9.728,88.881 l 9.728,86.912 c 0.277,2.331 2.012,4.013 4.119,4.013 2.075,0 3.768,-1.639 4.108,-3.991 l 11.068,-86.934 z m 153.304,-81.984 c -3.991,0 -7.291,3.267 -7.482,7.418 l -7.748,163.521 7.748,105.676 c 0.202,4.129 3.491,7.386 7.482,7.386 3.97,0 7.259,-3.268 7.493,-7.407 v 0.032 l 8.759,-105.687 -8.759,-163.521 c -0.235,-4.151 -3.524,-7.418 -7.493,-7.418 z m -79.345,56.834 c -3.065,0 -5.566,2.448 -5.812,5.715 l -8.727,108.347 8.727,104.824 c 0.234,3.246 2.746,5.694 5.812,5.694 3.033,0 5.534,-2.448 5.801,-5.694 l 9.919,-104.824 -9.919,-108.369 c -0.267,-3.245 -2.768,-5.693 -5.801,-5.693 z M 301.427,444.36 c 4.949,0 8.972,-3.992 9.174,-9.101 l 7.6,-103.898 -7.589,-217.706 c -0.202,-5.109 -4.226,-9.1 -9.174,-9.1 -4.992,0 -9.025,4.002 -9.186,9.111 l -6.737,217.684 6.737,103.941 c 0.16,5.067 4.193,9.069 9.175,9.069 z m 165.075,0.49 c 6.812,0 12.432,-5.609 12.559,-12.506 v 0.074 -0.074 L 484.362,331.425 479.06,79.991 c -0.117,-6.886 -5.747,-12.505 -12.559,-12.505 -6.822,0 -12.452,5.609 -12.559,12.516 l -4.736,251.338 c 0,0.16 4.736,101.067 4.736,101.067 0.108,6.833 5.748,12.443 12.56,12.443 z m -83.166,-0.394 c 5.929,0 10.707,-4.758 10.867,-10.824 v 0.074 l 6.449,-102.323 -6.46,-219.281 c -0.16,-6.067 -4.938,-10.813 -10.867,-10.813 -5.971,0 -10.749,4.747 -10.877,10.813 l -5.736,219.292 5.747,102.302 c 0.128,6.002 4.906,10.76 10.877,10.76 z m -202.369,-0.958 c 3.523,0 6.376,-2.821 6.642,-6.535 l 9.345,-105.697 -9.345,-100.546 c -0.255,-3.714 -3.107,-6.514 -6.642,-6.514 -3.575,0 -6.428,2.82 -6.651,6.557 l -8.228,100.503 8.228,105.687 c 0.234,3.724 3.075,6.545 6.651,6.545 z m -78.716,-5.79 c 2.575,0 4.661,-2.033 4.959,-4.843 L 117.704,331.244 107.22,225.792 c -0.309,-2.82 -2.395,-4.854 -4.97,-4.854 -2.608,0 -4.694,2.044 -4.96,4.854 l -9.238,105.452 9.238,101.6 c 0.256,2.82 2.342,4.864 4.961,4.864 z M 424.76,108.451 c -6.439,0 -11.602,5.12 -11.729,11.676 l -5.236,211.277 5.236,101.663 c 0.128,6.471 5.279,11.591 11.729,11.591 6.428,0 11.559,-5.109 11.707,-11.665 v 0.085 l 5.875,-101.663 -5.875,-211.31 c -0.149,-6.534 -5.28,-11.654 -11.707,-11.654 z M 260.961,444.573 c 4.449,0 8.121,-3.63 8.334,-8.26 l 8.174,-104.974 -8.174,-200.921 c -0.224,-4.641 -3.885,-8.259 -8.334,-8.259 -4.491,0 -8.152,3.629 -8.344,8.259 l -7.237,200.921 7.248,105.017 c 0.18,4.587 3.841,8.217 8.333,8.217 z m 91.276,-9.909 v -0.054 l 7.024,-103.238 -7.024,-225.039 c -0.171,-5.587 -4.577,-9.972 -10.016,-9.972 -5.471,0 -9.877,4.374 -10.025,9.972 l -6.237,225.028 6.247,103.292 c 0.149,5.534 4.556,9.908 10.016,9.908 5.449,0 9.834,-4.374 10.016,-9.94 v 0.043 z M 883.521,201.653 c -16.678,0 -32.589,3.374 -47.085,9.451 C 826.75,101.395 734.751,15.334 622.53,15.334 c -27.459,0 -54.227,5.407 -77.865,14.549 -9.185,3.555 -11.633,7.216 -11.718,14.315 v 386.346 c 0.096,7.45 5.875,13.655 13.145,14.39 0.309,0.032 335.248,0.202 337.42,0.202 67.222,0 121.726,-54.504 121.726,-121.736 -0,-67.233 -54.494,-121.747 -121.717,-121.747 z M 508.063,43.858 c -7.312,0 -13.314,6.003 -13.421,13.378 l -5.492,274.221 5.503,99.524 c 0.096,7.27 6.099,13.262 13.41,13.262 7.29,0 13.293,-5.992 13.399,-13.368 v 0.117 l 5.971,-99.535 -5.971,-274.242 c -0.106,-7.354 -6.109,-13.357 -13.399,-13.357 z'/></svg%3E");
+}
+
+.icon-bandcamp {
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23006054' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 450.689 450.69' xml:space='preserve'><g><g><path d='M25.634,272.867c-6.45,0.104-11.945,2.751-15.96,8.562H9.461v-27.592H0.156v75.903h8.774v-6.873h0.21 c1.903,3.065,5.814,8.456,15.223,8.456c18.815,0,24.314-17.653,24.314-30.863C48.677,284.919,40.326,272.867,25.634,272.867z M24.153,323.292c-5.919,0-15.118-3.914-15.118-18.608c0-8.985,1.478-23.468,14.904-23.468c14.375,0,15.118,13.641,15.118,20.721 C39.058,314.09,34.299,323.292,24.153,323.292z'/><path d='M97.409,320.117V288.3c0-14.161-16.068-15.434-20.506-15.434c-13.637,0-22.41,5.18-22.833,18.395h8.563c0.633-4.231,2.114-10.674,12.686-10.674c8.773,0,13.001,3.164,13.001,8.981c0,5.497-2.642,6.346-4.863,6.56l-15.33,1.896c-15.433,1.9-16.806,12.686-16.806,17.339c0,9.51,7.188,15.958,17.334,15.958c10.783,0,16.386-5.073,19.979-8.982c0.317,4.227,1.585,8.453,9.832,8.453c2.113,0,3.487-0.632,5.075-1.054v-6.766c-1.061,0.215-2.222,0.42-3.067,0.42C98.574,323.392,97.409,322.446,97.409,320.117z M88.105,310.604c0,7.4-8.456,13-17.124,13c-6.978,0-10.045-3.593-10.045-9.617	c0-6.978,7.295-8.351,11.841-8.989c11.523-1.479,13.846-2.322,15.325-3.487v9.094H88.105z'/><path d='M133.562,272.867c-9.514,0-14.695,6.448-16.701,9.404h-0.213v-7.819h-8.773v55.286h9.301V299.61c0-15.012,9.304-18.391,14.59-18.391c9.091,0,11.84,4.863,11.84,14.48v34.038h9.301v-37.633C152.907,276.356,142.124,272.867,133.562,272.867z'/><path d='M197.94,282.271h-0.21c-2.219-3.163-6.45-9.404-16.491-9.404c-14.692,0-23.043,12.053-23.043,27.592c0,13.209,5.496,30.862,24.312,30.862c5.396,0,11.737-1.688,15.75-9.197h0.216v7.614h8.769v-75.902h-9.299v28.436H197.94z M182.717,323.292c-10.15,0-14.905-9.201-14.905-21.355c0-7.08,0.74-20.721,15.117-20.721c13.424,0,14.901,14.482,14.901,23.468C197.833,319.377,188.637,323.292,182.717,323.292z'/><path d='M240.539,281.219c7.824,0,11.948,4.438,13.106,11.837h8.988c-0.742-9.617-6.241-20.194-20.722-20.194c-18.285,0-26.531,13.641-26.531,30.763c0,15.963,9.196,27.694,24.733,27.694c16.178,0,21.567-12.368,22.52-21.141h-8.988	c-1.585,8.455-6.976,13.109-13.212,13.109c-12.79,0-15.116-11.736-15.116-21.251C225.317,292.209,229.018,281.219,240.539,281.219z'/><path d='M309.674,320.117V288.3c0-14.161-16.065-15.434-20.507-15.434c-13.637,0-22.409,5.18-22.834,18.395h8.563c0.634-4.231,2.116-10.674,12.688-10.674c8.772,0,13.002,3.164,13.002,8.981c0,5.497-2.646,6.346-4.863,6.56l-15.329,1.896c-15.434,1.9-16.807,12.686-16.807,17.339c0,9.51,7.183,15.958,17.336,15.958c10.78,0,16.385-5.073,19.979-8.982c0.315,4.227,1.581,8.453,9.832,8.453c2.109,0,3.487-0.632,5.073-1.054v-6.766c-1.059,0.215-2.22,0.42-3.063,0.42C310.839,323.392,309.674,322.446,309.674,320.117z M300.371,310.604c0,7.4-8.458,13-17.121,13c-6.985,0-10.046-3.593-10.046-9.617c0-6.978,7.292-8.351,11.839-8.989c11.523-1.479,13.848-2.322,15.328-3.487V310.604z'/><path d='M377.433,272.867c-8.563,0-12.266,3.805-16.909,8.987c-1.59-2.961-4.759-8.987-14.695-8.987s-14.694,6.448-16.702,9.404 h-0.214v-7.819h-8.769v55.286h9.3V299.61c0-15.012,9.3-18.391,14.585-18.391c6.868,0,8.668,5.601,8.668,10.252v38.27h9.305 v-33.722c0-7.404,5.181-14.8,13.002-14.8c7.925,0,10.252,5.179,10.252,12.79v35.731h9.3v-38.27	C394.557,275.93,383.354,272.867,377.433,272.867z'/><path d='M427.642,272.867c-10.037,0-14.262,6.241-16.488,9.404h-0.214v-7.819h-8.773v77.166h9.305v-27.694h0.212 c2.435,3.91,7.295,7.397,14.692,7.397c18.821,0,24.314-17.653,24.314-30.862C450.691,284.919,442.338,272.867,427.642,272.867z M426.17,323.292c-5.922,0-15.121-3.914-15.121-18.608c0-8.985,1.482-23.468,14.904-23.468c14.38,0,15.121,13.641,15.121,20.721 C441.072,314.09,436.312,323.292,426.17,323.292z'/></g><polygon points='0,251.739 181.402,251.739 251.965,99.074 70.561,99.074 '/><g><path d='M301.692,136.215c-12.59,0.208-23.315,5.368-31.155,16.712h-0.417V99.072h-18.157V247.22h17.131v-13.412h0.41 c3.714,5.982,11.349,16.503,29.709,16.503c36.729,0,47.457-34.453,47.457-60.241C346.668,159.742,330.372,136.215,301.692,136.215	z M298.8,234.635c-11.549,0-29.501-7.639-29.501-36.313c0-17.539,2.883-45.805,29.09-45.805c28.06,0,29.504,26.619,29.504,40.442 C327.893,216.677,318.608,234.635,298.8,234.635z'/><path d='M407.408,152.517c15.268,0,23.324,8.664,25.589,23.106h17.534c-1.443-18.771-12.171-39.41-40.44-39.41 c-35.692,0-51.78,26.619-51.78,60.04c0,31.16,17.949,54.058,48.276,54.058c31.567,0,42.095-24.138,43.944-41.262h-17.534 c-3.098,16.503-13.615,25.586-25.785,25.586c-24.964,0-29.508-22.905-29.508-41.473 C377.706,173.97,384.928,152.517,407.408,152.517z'/></g></g></svg%3E");
+}
+
+.icon-youtube {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 -3 20 20' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g id='Page-1'><g id='Dribbble-Light-Preview' transform='translate(-300.000000, -7442.000000)' fill='%23006054'><g id='icons' transform='translate(56.000000, 160.000000)'><path d='M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289'></path></g></g></g></svg%3E");
 }/*# sourceMappingURL=app.css.map */

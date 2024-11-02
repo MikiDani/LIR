@@ -6,6 +6,11 @@ use App\Models\News;
 
 class PageController extends Controller
 {
+    public function start()
+    {
+        return inertia('Start');
+    }
+
     public function news()
     {
         //$news = News::all();
@@ -18,8 +23,13 @@ class PageController extends Controller
         ]);
     }
 
-    public function about()
+    public function music()
     {
-        return inertia('About');
+        return inertia('Music');
+    }
+
+    public function code()
+    {
+        return inertia('Code');
     }
 }

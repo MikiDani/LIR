@@ -4,7 +4,7 @@ import { Link } from '@inertiajs/react';
 
 import { useState, useEffect } from 'react';
 
-function Home({ news, teszt }) {
+function Home({ news}) {
   
   console.log(news); // Az aktuális adatok
 
@@ -17,9 +17,6 @@ function Home({ news, teszt }) {
 
   function reloadNews() {
     router.reload({ only: ['news'] })
-
-    console.log('reload')
-    console.log(news)
   }
 
   const NavigationBar = function({links}) {
@@ -32,9 +29,9 @@ function Home({ news, teszt }) {
               href={link.url}
               className={`p-3 ${link.active ? 'fw-bold' : ''}`}
               >
-              {index === 0 
+              {index == 0 
                 ? '<<'
-                : index === links.length - 1 
+                : index == links.length - 1 
                 ? '>>'
                 : link.label
               }
@@ -42,9 +39,9 @@ function Home({ news, teszt }) {
           ) : (
             <span key={index} className='p-3 text-inactive'>
               {
-              index === 0 
+              index == 0 
                 ? '<<'
-                : index === links.length - 1 
+                : index == links.length - 1 
                 ? '>>'
                 : link.label
               }
@@ -56,7 +53,13 @@ function Home({ news, teszt }) {
   }
 
   return (
+
     <>
+    <div className="bg-info">
+      <Link preserveScroll href="/" only={['users']}>News</Link>
+      <Link preserveScroll href="/about">About</Link>
+    </div>
+      
       <h4 className='p-2 bg-title rounded'>Home</h4>
       
       <div className='p-4 text-center'>allapot: { allapot ? (<>TRUE</>) : (<>FALSE</>) }</div>

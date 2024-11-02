@@ -48,5 +48,7 @@ Route::middleware([\App\Http\Middleware\LanguageMiddleware::class, RedirectIfAut
 });
 
 // FRONTEND
-Route::get('/',            			 			[PageController::class, 'news'])->name('start');
-Route::get('/about',       						[PageController::class, 'about']);
+Route::get('/',            			 			[PageController::class, 'start'])->name('start');
+Route::get('/news',        			 			[PageController::class, 'news'])->name('news');
+Route::get('/music',       						[PageController::class, 'music'])->name('music');
+Route::get('/code',       						[PageController::class, 'code'])->name('code');
