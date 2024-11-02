@@ -49,13 +49,18 @@
                         <input type="text" name="link" value="@isset($new->title){{$new->link}}@endisset" class="form-control">
                         
                         <label class="p-0 mt-3 mb-1">Szöveg</label>
-                        <textarea name="text" cols="30" rows="4" class="form-control mb-3 w-100">@isset($new->text){{$new->text}}@endisset</textarea>
+                        <textarea name="text" cols="30" rows="6" class="form-control mb-3 w-100">@isset($new->text){{$new->text}}@endisset</textarea>
 
                         @if ($new->pictname != null && Storage::disk('newspic')->fileExists($new->pictname))
-                            <div class="col-12 col-sm-4 bg-white p-1 m-0 me-2 rounded">
+                        <div class="row p-0 m-0 mb-3">
+                            <div class="col-12 col-sm-6 bg-white p-1 m-0 rounded">
                                 <img src="{{ Storage::disk('newspic')->url($new->pictname) }}" alt="{{ $new->title }}" class="w-100 rouned">
                             </div>
-                            <a href="{{ route('admin_news_img_delete', ['id' => $new->id]) }}" class="btn btn-danger"><i class="bi bi-trash"></i></a>
+                            <div class="col-12 col-sm-6 d-flex justify-content-center align-items-center">
+                                <a href="{{ route('admin_news_img_delete', ['id' => $new->id]) }}" class="btn btn-danger my-3">{{ $new->pictname }} Kép törlése <i class="bi bi-trash"></i></a>
+                            </div>
+                            <input type="hidden" name="imagename" value="{{ $new->pictname }}">
+                        </div>
                         @else
                             <input type="file" name="image" class="form-control mb-3">
                         @endif

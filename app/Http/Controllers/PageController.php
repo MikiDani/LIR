@@ -11,11 +11,11 @@ class PageController extends Controller
         //$news = News::all();
         $news = News::latest()->paginate(3);
 
-        $teszt = 'kiskacsa';
-
         // dd($news);
 
-        return inertia('News', ['news' => $news, 'teszt' => $teszt]);
+        return inertia('News', [
+            'news' => $news,
+        ]);
     }
 
     public function about()

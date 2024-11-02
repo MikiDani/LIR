@@ -133,7 +133,9 @@ class BackendController extends Controller
 			return back()->withErrors(['error' => 'A hír nem található.']);
 		}
 
-		$pictname = ($request->has('image')) ? $this->imageupload($request->image) : null;
+		$pictname = ($request->imagename)
+    		? $request->imagename
+    		: (($request->has('image')) ? $this->imageupload($request->image) : null);
 
 		$new->date = $validated['date'];
 		$new->sequence = $validated['sequence'] ?? $new->sequence;
