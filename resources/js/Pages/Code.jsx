@@ -1,6 +1,19 @@
 import Layout from "../Layout/Layout";
+import React, { useEffect } from 'react';
 
-function Code() {
+function Code({ pagename }) {
+
+  useEffect(() => {
+    let element = document.getElementById("center-container");
+    if (element) {
+      if (pagename == 'start') {
+        element.classList.add('start-style');
+      } else {
+        element.classList.remove('start-style');
+      }
+    }
+  }, [pagename]);
+
   return (
     <>
       <h4 className="p-2 bg-title rounded">Code</h4>

@@ -12005,9 +12005,12 @@ a:hover {
   padding: 0;
 }
 
+.start-style {
+  padding-top: 25vh;
+}
+
 #center-container {
   display: block;
-  padding-top: 15vh !important;
 }
 
 #menu-container {
