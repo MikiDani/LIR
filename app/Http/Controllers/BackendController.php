@@ -23,7 +23,7 @@ class BackendController extends Controller
 		$manager = new ImageManager(Driver::class);
 		
 		$imageInstance = $manager->read($image);
-		$imageInstance->scaleDown(width: 400);
+		$imageInstance->scaleDown(width: 800);
 		
 		$imageInstance->save(Storage::disk('newspic')->path($pictname));
 	

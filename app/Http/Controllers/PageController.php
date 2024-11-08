@@ -15,7 +15,6 @@ class PageController extends Controller
 
     public function news()
     {
-        //$news = News::all();
         $news = News::latest()->paginate(3);
 
         // dd($news);

@@ -12,7 +12,7 @@ export default function Layout({children}) {
                       <div className="d-block d-sm-none">
                           <img src="/img/frontend/tuccmann-logo-mobile.png" alt="TuccMann - logo" title='TuccMann - logo' className='w-100'/>
                       </div>
-                      <div className="d-none d-sm-block">
+                      <div className="d-none d-sm-block my-3">
                           <img src="/img/frontend/tuccmann-logo.png" alt="TuccMann - logo" title='TuccMann - logo' className='w-100'/>
                       </div>
                     </Link>
@@ -42,13 +42,13 @@ export default function Layout({children}) {
         {children}
       </div>
       <footer className="mx-auto my-3">
-          <div className="footer-icon icon-email"></div>
-          <div className="footer-icon icon-facebook"></div>
-          <div className="footer-icon icon-spotify"></div>
-          <div className="footer-icon icon-youtube"></div>
-          <div className="footer-icon icon-bandcamp"></div>
-          <div className="footer-icon icon-soundcloud"></div>
-          <div className="footer-icon icon-github"></div>
+          <a href="mailto:tuccmann@gmail.com"><div className="footer-icon icon-email"></div></a>
+          <a href="https://www.facebook.com/mann.tucc.9" target="_blank"><div className="footer-icon icon-facebook"></div></a>
+          <a href="https://open.spotify.com/artist/6sPaofbcYdwUSPUaMx4Z9B" target="_blank"><div className="footer-icon icon-spotify"></div></a>
+          <a href="https://www.youtube.com/@tuccmann3004" target="_blank"><div className="footer-icon icon-youtube"></div></a>
+          <a href="https://djtuccmann.bandcamp.com/" target="_blank"><div className="footer-icon icon-bandcamp"></div></a>
+          <a href="https://soundcloud.com/tucc-mann" target="_blank"><div className="footer-icon icon-soundcloud"></div></a>
+          <a href="https://github.com/MikiDani" target="_blank"><div className="footer-icon icon-github"></div></a>
       </footer>
     </div>
   );
